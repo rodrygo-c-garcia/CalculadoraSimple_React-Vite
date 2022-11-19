@@ -1,7 +1,13 @@
 import { useState } from "react";
+import { evaluate } from "mathjs";
+import freeCodeCampLogo from "./img/freecodecamp-logo.png";
 
 import "./App.css";
 import Boton from "./componentes/Boton";
+import BotonClear from "./componentes/BotonClear";
+import ModalError from "./componentes/ModalError";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Pantalla from "./componentes/Pantalla";
 
 function App() {
   const [input, setInput] = useState("");
@@ -69,6 +75,7 @@ function App() {
           </div>
         </div>
       </div>
+      <ModalError show={show} handleClose={handleClose} />
     </>
   );
 }
