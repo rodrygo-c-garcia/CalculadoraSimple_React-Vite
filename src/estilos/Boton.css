@@ -1,0 +1,40 @@
+.boton-contenedor {
+  height: 80px;
+  display: flex;
+  /* los elementos se distribuyen el espacio de forma equitativa */
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  margin: 4px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 20px;
+
+  /* From https://css.glass */
+  background: rgba(19, 56, 110, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(19, 56, 110, 0.31);
+}
+
+.boton-contenedor:hover {
+  background-color: #115a9e;
+}
+
+.operador {
+  /* From https://css.glass */
+  background: rgba(44, 93, 41, 0.82);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(44, 93, 41, 0.31);
+}
+
+.operador:hover {
+  background-color: #c98f13;
+}
